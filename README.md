@@ -80,8 +80,4 @@ git clone https://github.com/WOI-Core/WOI-Grader-Archive.git
 
 -----
 
-หวังว่า Repository นี้จะเป็นประโยชน์ในการพัฒนาทักษะด้าน Informatics ของทุกท่านครับ\!
-
------
-
 Kim Slick The Legendary \!\!\!
