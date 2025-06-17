@@ -44,12 +44,25 @@ Repository นี้จะจัดระเบียบเนื้อหาต
 │       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น investor.cpp)
 │       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input1.in, output/output1.txt)
 │       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
-└── Camp3/                   # เนื้อหาและโจทย์สำหรับค่าย 3 (ระดับสูง)
-    ├── TaskName/
-        ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
-        ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
-        ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
-        └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+├── Camp3/                   # เนื้อหาและโจทย์สำหรับค่าย 3 (ระดับสูง)
+│   ├── TaskName/
+│       ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
+│       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
+│       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+│       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+├── Contests/
+│   ├── ContestName/                   # เนื้อหาและโจทย์สำหรับ Contest ย่อยในค่าย
+│       ├── TaskName/
+│           ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
+│           ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
+│           ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+│           └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+├── TUSCO/                   # เนื้อหาและโจทย์สำหรับ TUSCO
+│  ├── TaskName/
+│       ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
+│       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
+│       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+│       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 ```
 
 -----
