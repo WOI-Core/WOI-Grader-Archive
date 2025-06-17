@@ -33,31 +33,21 @@ Repository นี้จะจัดระเบียบเนื้อหาต
 ```
 .
 ├── Camp1/                   # เนื้อหาและโจทย์สำหรับค่าย 1 (พื้นฐาน)
-│   ├── Street Fighter/
-│   │   ├── Problems/        # ไฟล์โจทย์ (เช่น streetfighter.md, streetfighter.pdf)
-│   │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น streetfighter.cpp)
-│   │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
-│   │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
-├── Camp2/                   # เนื้อหาและโจทย์สำหรับค่าย 2 (ระดับกลาง)
-│   ├── Investor/
-│   │   ├── Problems/        # ไฟล์โจทย์ (เช่น investor.md, investor.pdf, investor.docx)
-│   │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น investor.cpp)
-│   │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input1.in, output/output1.txt)
-│   │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
-│   └── Street Fighter/
+│   ├── TaskName/
 │       ├── Problems/        # ไฟล์โจทย์ (เช่น streetfighter.md, streetfighter.pdf)
 │       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น streetfighter.cpp)
 │       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
 │       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+├── Camp2/                   # เนื้อหาและโจทย์สำหรับค่าย 2 (ระดับกลาง)
+│   ├── TaskName/
+│       ├── Problems/        # ไฟล์โจทย์ (เช่น investor.md, investor.pdf, investor.docx)
+│       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น investor.cpp)
+│       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input1.in, output/output1.txt)
+│       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 └── Camp3/                   # เนื้อหาและโจทย์สำหรับค่าย 3 (ระดับสูง)
-    ├── Disaster_Dragon/
-    │   ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
-    │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
-    │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
-    │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
-    └── Paradox/
-        ├── Problems/        # ไฟล์โจทย์ (เช่น paradox.pdf)
-        ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น paradox.cpp)
+    ├── TaskName/
+        ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
+        ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
         ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
         └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 ```
