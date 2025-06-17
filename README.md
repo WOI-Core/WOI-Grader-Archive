@@ -21,6 +21,7 @@ Repository นี้ถูกสร้างขึ้นเพื่อเป็
   * **สื่อการสอน/สไลด์ (Lecture Materials/Slides):** เอกสารประกอบการบรรยาย หรือสไลด์ที่ใช้สอนในค่าย เพื่อทบทวนเนื้อหาสำคัญ
   * **ตัวอย่างโค้ด (Sample Codes):** ตัวอย่างการใช้งานอัลกอริทึม หรือโครงสร้างข้อมูลที่สำคัญ เพื่อเป็นแนวทางในการนำไปปรับใช้
   * **Test Cases (ถ้ามี):** ชุดข้อมูลทดสอบ (Input/Output) สำหรับโจทย์บางข้อ เพื่อให้สามารถทดสอบโค้ดด้วยตนเองได้
+  * **Scripts (ถ้ามี):** สคริปต์หรือโค้ดที่ใช้ในการสร้าง Test Cases สำหรับโจทย์นั้นๆ
   * **แหล่งข้อมูลเพิ่มเติม (Additional Resources):** ลิงก์ไปยังบทความ, เว็บไซต์, หรือตำราที่เกี่ยวข้องเพื่อการศึกษาด้วยตนเอง
 
 -----
@@ -32,20 +33,33 @@ Repository นี้จะจัดระเบียบเนื้อหาต
 ```
 .
 ├── Camp1/                   # เนื้อหาและโจทย์สำหรับค่าย 1 (พื้นฐาน)
-│   ├── Problems/            # โฟลเดอร์รวมโจทย์ค่าย 1
-│   ├── Solutions/           # (ถ้ามี) เฉลยหรือแนวคิด
-│   ├── Scripts/           # (ถ้ามี) สื่อการสอน/สไลด์
-│   └── TestCases/           # (ถ้ามี) ชุดข้อมูลทดสอบ
+│   ├── Street Fighter/
+│   │   ├── Problems/        # ไฟล์โจทย์ (เช่น streetfighter.md, streetfighter.pdf)
+│   │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น streetfighter.cpp)
+│   │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+│   │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 ├── Camp2/                   # เนื้อหาและโจทย์สำหรับค่าย 2 (ระดับกลาง)
-│   ├── Problems/
-│   ├── Solutions/
-│   ├── Scripts/
-│   └── TestCases/
+│   ├── Investor/
+│   │   ├── Problems/        # ไฟล์โจทย์ (เช่น investor.md, investor.pdf, investor.docx)
+│   │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น investor.cpp)
+│   │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input1.in, output/output1.txt)
+│   │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+│   └── Street Fighter/
+│       ├── Problems/        # ไฟล์โจทย์ (เช่น streetfighter.md, streetfighter.pdf)
+│       ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น streetfighter.cpp)
+│       ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+│       └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 └── Camp3/                   # เนื้อหาและโจทย์สำหรับค่าย 3 (ระดับสูง)
-    ├── Problems/
-    ├── Solutions/
-    ├── Scripts/
-    └── TestCases/
+    ├── Disaster_Dragon/
+    │   ├── Problems/        # ไฟล์โจทย์ (เช่น disaster_dragon.pdf)
+    │   ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น disaster_dragon.cpp)
+    │   ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+    │   └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
+    └── Paradox/
+        ├── Problems/        # ไฟล์โจทย์ (เช่น paradox.pdf)
+        ├── Solutions/       # (ถ้ามี) เฉลยหรือแนวคิด (เช่น paradox.cpp)
+        ├── TestCases/       # (ถ้ามี) ชุดข้อมูลทดสอบ (เช่น input/input01.txt, output/output01.txt)
+        └── Scripts/         # (ถ้ามี) สคริปต์สำหรับสร้าง Test Cases
 ```
 
 -----
@@ -66,4 +80,8 @@ git clone https://github.com/WOI-Core/WOI-Grader-Archive.git
 
 -----
 
-Kim Slick The Legendary !!! 
+หวังว่า Repository นี้จะเป็นประโยชน์ในการพัฒนาทักษะด้าน Informatics ของทุกท่านครับ\!
+
+-----
+
+Kim Slick The Legendary \!\!\!
