@@ -72,7 +72,7 @@ Repository นี้จะจัดระเบียบเนื้อหาต
 คุณสามารถ `git clone` Repository นี้เพื่อเข้าถึงไฟล์ทั้งหมด หรือดาวน์โหลดเป็นไฟล์ ZIP ก็ได้
 
 ```bash
-git clone https://github.com/WOI-Core/WOI-Grader-Archive.git
+git clone https://github.com/WOI-Core/woi-grader-archive.git
 ```
 
 -----
