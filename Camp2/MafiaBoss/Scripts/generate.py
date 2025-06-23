@@ -17,6 +17,56 @@ SOLUTION_CPP_PATH = SOLUTIONS_DIR / SOLUTION_CPP_NAME
 # ตั้งชื่อไฟล์ executable สำหรับโจทย์นี้โดยเฉพาะ
 SOLUTION_EXE_PATH = SOLUTIONS_DIR / "mafiaboss_solution"
 
+def generate_sample_case(test_case_number):
+    """Generate predefined sample cases from PDF"""
+    if test_case_number == 0:
+        return "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n"
+    elif test_case_number == 1:
+        return "8 7\n1 2\n1 4\n2 3\n2 6\n3 4\n4 5\n7 8\n"
+    elif test_case_number == 2:
+        return "5 5\n1 2\n1 3\n2 3\n3 4\n4 5\n"
+    return None
+
+def generate_complete_graph(N):
+    """Generate a complete graph with N vertices"""
+    edges = set()
+    for i in range(1, N + 1):
+        for j in range(i + 1, N + 1):
+            edges.add(tuple(sorted((i, j))))
+    return edges
+
+def generate_cycle_graph(N):
+    """Generate a cycle graph with N vertices"""
+    edges = set()
+    for i in range(1, N):
+        edges.add(tuple(sorted((i, i + 1))))
+    edges.add(tuple(sorted((N, 1))))
+    return edges
+
+def generate_bipartite_graph(N):
+    """Generate a bipartite graph with N vertices"""
+    edges = set()
+    for i in range(1, N + 1):
+        # Connect to a random node in the other partition
+        # Partition 1: odd, Partition 2: even
+        u = i
+        v = random.randint(1, N)
+        if (u % 2) == (v % 2): # if in same partition, shift v
+            v = v + 1 if v < N else v - 1
+        edges.add(tuple(sorted((u, v))))
+    return edges
+
+def generate_random_graph(N):
+    """Generate a random graph with N vertices"""
+    edges = set()
+    max_edges = N * (N - 1) // 2
+    E_to_gen = random.randint(N - 1, min(max_edges, N * 5)) # dense enough
+    while len(edges) < E_to_gen:
+        u = random.randint(1, N)
+        v = random.randint(1, N)
+        if u != v:
+            edges.add(tuple(sorted((u, v))))
+    return edges
 
 def generate_input(test_case_number):
     """
@@ -27,43 +77,21 @@ def generate_input(test_case_number):
     random.seed(test_case_number)
 
     # Case 0-2: Sample cases from PDF
-    if test_case_number == 0:
-        return "4 6\n1 2\n1 3\n1 4\n2 3\n2 4\n3 4\n"
-    elif test_case_number == 1:
-        return "8 7\n1 2\n1 4\n2 3\n2 6\n3 4\n4 5\n7 8\n"
-    elif test_case_number == 2:
-        return "5 5\n1 2\n1 3\n2 3\n3 4\n4 5\n"
+    sample_case = generate_sample_case(test_case_number)
+    if sample_case is not None:
+        return sample_case
 
     # Test cases for Subtask 1 (N <= 100)
-    else:
-        N = random.randint(80, 100)
-        edges = set()
+    N = random.randint(80, 100)
 
-        if test_case_number == 3: # Complete graph (K_n), requires N colors
-            for i in range(1, N + 1):
-                for j in range(i + 1, N + 1):
-                    edges.add(tuple(sorted((i, j))))
-        elif test_case_number == 4: # Cycle graph (C_n), requires 2 or 3 colors
-            for i in range(1, N):
-                edges.add(tuple(sorted((i, i + 1))))
-            edges.add(tuple(sorted((N, 1))))
-        elif test_case_number == 5: # Bipartite graph (requires 2 colors)
-            for i in range(1, N + 1):
-                # Connect to a random node in the other partition
-                # Partition 1: odd, Partition 2: even
-                u = i
-                v = random.randint(1, N)
-                if (u % 2) == (v % 2): # if in same partition, shift v
-                    v = v + 1 if v < N else v - 1
-                edges.add(tuple(sorted((u, v))))
-        else: # Random graph
-            max_edges = N * (N - 1) // 2
-            E_to_gen = random.randint(N - 1, min(max_edges, N * 5)) # dense enough
-            while len(edges) < E_to_gen:
-                u = random.randint(1, N)
-                v = random.randint(1, N)
-                if u != v:
-                    edges.add(tuple(sorted((u, v))))
+    if test_case_number == 3: # Complete graph (K_n), requires N colors
+        edges = generate_complete_graph(N)
+    elif test_case_number == 4: # Cycle graph (C_n), requires 2 or 3 colors
+        edges = generate_cycle_graph(N)
+    elif test_case_number == 5: # Bipartite graph (requires 2 colors)
+        edges = generate_bipartite_graph(N)
+    else: # Random graph
+        edges = generate_random_graph(N)
 
     E = len(edges)
 
