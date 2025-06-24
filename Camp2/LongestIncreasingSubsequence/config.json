@@ -1,7 +1,0 @@
-
-{
-    "title": "LongestIncreasingSubsequence",
-    "timeLimit": 1000,
-    "memoryLimit": 64,
-    "note": "You can submit in C++ or Python. The output should match exactly."
-}
