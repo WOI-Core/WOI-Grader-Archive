@@ -1,0 +1,7 @@
+
+{
+    "title": "ShortestPathAdventure",
+    "timeLimit": 1000,
+    "memoryLimit": 256,
+    "note": "You can submit in C++ or Python. The output should match exactly."
+}
