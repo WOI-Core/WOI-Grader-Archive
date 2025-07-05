@@ -1,0 +1,7 @@
+
+{
+    "title": "MergeSortInversionCount",
+    "timeLimit": 1000,
+    "memoryLimit": 512,
+    "note": "You can submit in C++ or Python. The output should match exactly."
+}
